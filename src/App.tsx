@@ -8,7 +8,7 @@ function App() {
     <Suspense fallback={<p>Loading...</p>}>
       <>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/*" element={<Home />} />
           {import.meta.env.VITE_TEMPO === "true" && (
             <Route path="/tempobook/*" />
           )}

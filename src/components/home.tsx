@@ -7,6 +7,7 @@ import UserList from "./users/UserList";
 import SelfAssessmentForm from "./assessment/SelfAssessmentForm";
 import EvaluationForm from "./assessment/EvaluationForm";
 import EvaluatorAssignment from "./assignment/EvaluatorAssignment";
+import SettingsPage from "./settings/SettingsPage";
 import { useLocation } from "react-router-dom";
 
 export default function Home() {
@@ -33,6 +34,8 @@ export default function Home() {
         return <EvaluationForm />;
       case "assignment":
         return <EvaluatorAssignment />;
+      case "settings":
+        return <SettingsPage />;
       case "dashboard":
       default:
         return <AdminDashboard />;
